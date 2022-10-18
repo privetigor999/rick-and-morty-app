@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, Navigate } from "react-router-dom";
 import Navbar from "./components/Navbar/Navbar";
 import { useDispatch } from "react-redux";
 import { getMainData } from "../src/features/dataSlice";
@@ -26,6 +26,7 @@ function App() {
         <Route path="/location" element={<LocationPage />} />
         <Route path="/episode" element={<EpisodePage />} />
         <Route path="/about" element={<AboutPage />} />
+        <Route path="/rick-and-morty-app" element={<Navigate to="/" />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
     </div>
