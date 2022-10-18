@@ -1,0 +1,48 @@
+.container {
+  width: 100%;
+  height: 60px;
+  background-color: rgb(35, 32, 41);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 80px;
+  position: fixed;
+  border-bottom: 2px solid rgb(60, 62, 68);
+  .homeLogo {
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    fill: #ffffff;
+    transition: transform 0.15s ease-in-out;
+  }
+  .homeLogo:hover {
+    fill: #ce994f;
+    transform: scale(110%);
+  }
+  .navbar {
+    display: flex;
+    align-items: center;
+    .linkRouterDom {
+      text-decoration: none;
+    }
+    .navItem {
+      color: #ffffff;
+      margin-left: 20px;
+      cursor: pointer;
+    }
+    .navItem:hover {
+      color: #ce994f;
+    }
+  }
+  .linkRouterDom {
+    text-decoration: none;
+  }
+  .navItem {
+    color: #ffffff;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+  .navItem:hover {
+    color: #ce994f;
+  }
+}

@@ -1,0 +1,108 @@
+.container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10vh;
+  .mainBlock {
+    background-color: rgb(60, 62, 68);
+    border: 2px solid #000000;
+    border-radius: 20px;
+    width: 900px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .closeBtn {
+      position: absolute;
+      width: 40px;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      fill: rgb(158, 158, 158);
+      transition: transform 0.15s ease-in-out;
+    }
+    .closeBtn:hover {
+      fill: #ce994f;
+      transform: scale(110%);
+    }
+    .headerInfoBlock {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-around;
+      width: 800px;
+      height: 200px;
+      margin-top: 40px;
+      .name {
+        color: #ffffff;
+        font-size: 34px;
+      }
+      .headerInfoEpisodeAndDate {
+        width: 100%;
+        height: 100px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: space-around;
+        .infoItem {
+          color: rgb(158, 158, 158);
+          font-size: 18px;
+          span {
+            margin-left: 12px;
+            font-size: 26px;
+            color: #ffffff;
+          }
+        }
+      }
+    }
+    .charactersBlock {
+      width: 800px;
+      overflow: scroll;
+      margin: 20px 0 40px 0;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      .characterItems {
+        width: 800px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: row;
+        background-color: #9e9e9e1e;
+        border: 1px solid rgb(158, 158, 158);
+        border-radius: 20px;
+        padding: 10px 20px;
+        color: rgb(158, 158, 158);
+        font-size: 20px;
+        .characterItem {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          flex-direction: row;
+          color: rgb(158, 158, 158);
+          line-height: 28px;
+          border-radius: 20px;
+          padding: 4px 20px;
+          background-color: rgba(158, 158, 158, 0.59);
+          cursor: pointer;
+          margin: 3px 6px;
+          color: #ffffff;
+          .characterImg {
+            width: 50px;
+            border-radius: 8px;
+            margin-right: 10px;
+          }
+          p {
+            font-size: 20px;
+          }
+        }
+        .characterItem:hover {
+          color: #ce994f;
+        }
+      }
+    }
+  }
+}

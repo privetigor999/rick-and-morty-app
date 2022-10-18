@@ -1,0 +1,40 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 100px;
+  color: #ffffff;
+  margin: 30px 0;
+  .buttomItem {
+    width: 60px;
+    height: 60px;
+    margin-left: 10px;
+    outline: none;
+    border: 1px solid #ffffff;
+    border-radius: 40%;
+    cursor: pointer;
+    font-size: 20px;
+    color: #ffffff;
+    background-color: rgb(60, 62, 68);
+    transition: transform 0.1s ease-in-out;
+  }
+
+  .buttomItem:hover {
+    transform: scale(110%);
+  }
+  .buttomItemActive {
+    color: #ce994f;
+    border: 1px solid #ce994f;
+  }
+  .buttomItemActive:hover {
+    transform: none;
+    cursor: auto;
+  }
+  .buttonPointers {
+    cursor: auto;
+    border: 1px solid #868686;
+  }
+  .buttonPointers:hover {
+    transform: none;
+  }
+}

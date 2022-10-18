@@ -1,0 +1,132 @@
+.container {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 10vh;
+
+  .mainBlock {
+    .closeBtn {
+      position: absolute;
+      width: 40px;
+      top: 10px;
+      right: 10px;
+      cursor: pointer;
+      fill: rgb(158, 158, 158);
+      transition: transform 0.15s ease-in-out;
+    }
+    .closeBtn:hover {
+      fill: #ce994f;
+      transform: scale(110%);
+    }
+    background-color: rgb(60, 62, 68);
+    border: 2px solid #000000;
+    border-radius: 20px;
+    width: 900px;
+    height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .headerInfoBlock {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-direction: row;
+      width: 800px;
+      height: 240px;
+      margin-top: 40px;
+      .headerInfoBlockImg {
+        width: 240px;
+        height: 240px;
+        margin-right: 20px;
+      }
+      .headerInfoBlockRight {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        height: 100%;
+        .name {
+          color: #ffffff;
+          font-size: 30px;
+        }
+        .gender {
+          color: rgb(158, 158, 158);
+          font-size: 14px;
+
+          span {
+            margin-left: 12px;
+            font-size: 20px;
+            color: #ffffff;
+          }
+        }
+        .locationAndOrigin {
+          color: rgb(158, 158, 158);
+          font-size: 14px;
+
+          .locationAndOriginValue {
+            margin-left: 12px;
+            font-size: 20px;
+            color: #ffffff;
+            cursor: pointer;
+          }
+          .locationAndOriginValue:hover {
+            color: #ce994f;
+          }
+        }
+
+        .aliveStatusBlock {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          p {
+            color: rgb(158, 158, 158);
+            font-size: 14px;
+
+            span {
+              font-size: 20px;
+              color: #ffffff;
+            }
+          }
+          .statusAliveImg {
+            width: 14px;
+            height: 14px;
+            margin-left: 12px;
+            margin-right: 5px;
+          }
+        }
+      }
+    }
+    .episodesBlock {
+      width: 800px;
+      overflow: scroll;
+      margin: 20px 0 40px 0;
+
+      .episodeParag {
+        color: rgb(158, 158, 158);
+        line-height: 28px;
+        border: 1px solid rgb(158, 158, 158);
+        border-radius: 20px;
+        padding: 10px 20px;
+        background-color: #9e9e9e1e;
+        .episodeItem {
+          display: inline-block;
+          color: #ffffff;
+          margin: 4px 10px;
+          padding: 2px 8px;
+          cursor: pointer;
+          background-color: rgba(158, 158, 158, 0.59);
+          border-radius: 4px;
+          overflow-wrap: normal;
+          font-size: 14px;
+        }
+        .episodeItem:hover {
+          color: #ce994f;
+        }
+      }
+      .episodeParag::first-letter {
+        margin-left: 10px;
+      }
+    }
+  }
+}

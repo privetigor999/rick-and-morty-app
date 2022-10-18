@@ -1,0 +1,18 @@
+.container {
+  margin-top: 64px;
+  width: 100%;
+  height: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(35, 32, 41);
+  border-bottom: 20px solid rgb(35, 32, 41);
+  .sliderBlock {
+    .sliderImg {
+      width: 1024px;
+      height: 300px;
+      object-fit: cover;
+      border-radius: 20px;
+    }
+  }
+}

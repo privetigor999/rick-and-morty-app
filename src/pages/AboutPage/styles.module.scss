@@ -1,0 +1,50 @@
+.container {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .aboutBlock {
+    background-color: rgb(60, 62, 68);
+    width: 700px;
+    height: 300px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    .image {
+      width: 300px;
+      height: 300px;
+      border-top-left-radius: 20px;
+      border-bottom-left-radius: 20px;
+    }
+    .myInfoBlock {
+      width: 400px;
+      height: 300px;
+      display: flex;
+      align-items: left;
+      flex-direction: column;
+      justify-content: space-around;
+      padding: 40px 0 40px 30px;
+      .infoItem {
+        color: rgb(158, 158, 158);
+        font-size: 16px;
+
+        .infoItemSpan {
+          font-size: 20px;
+          cursor: pointer;
+          color: #ffffff;
+          margin-left: 6px;
+        }
+        .infoItemSpan:hover {
+          color: #ce994f;
+        }
+        .infoItemClassic {
+          font-size: 20px;
+          color: #ffffff;
+          margin-left: 6px;
+        }
+      }
+    }
+  }
+}
