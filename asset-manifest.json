@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/rick-and-morty-app/static/css/main.86350839.css",
+    "main.js": "/rick-and-morty-app/static/js/main.3e4b6247.js",
+    "static/media/slider1.png": "/rick-and-morty-app/static/media/slider1.608ef9f120e73a0c203a.png",
+    "static/media/badMorty.png": "/rick-and-morty-app/static/media/badMorty.b2b2bdd2a319c3765e26.png",
+    "static/media/rick.png": "/rick-and-morty-app/static/media/rick.726e6a156364dc23917e.png",
+    "static/media/morty.png": "/rick-and-morty-app/static/media/morty.649f5457e9753230524f.png",
+    "static/media/unknown.png": "/rick-and-morty-app/static/media/unknown.0fd9f69840b69b4f6e57.png",
+    "static/media/alive.png": "/rick-and-morty-app/static/media/alive.4bfb03218bb2a1c4f390.png",
+    "static/media/dead.png": "/rick-and-morty-app/static/media/dead.526152b961a2a3b6379c.png",
+    "static/media/about.jpeg": "/rick-and-morty-app/static/media/about.84e1e46f62e7551a3e80.jpeg",
+    "static/media/home.svg": "/rick-and-morty-app/static/media/home.c9fd6807de0ff6e8e986d0f2ac9408ea.svg",
+    "index.html": "/rick-and-morty-app/index.html",
+    "static/media/closeBtn.svg": "/rick-and-morty-app/static/media/closeBtn.bfccd21b9f9dc84c9e5ee56304f22ad8.svg",
+    "main.86350839.css.map": "/rick-and-morty-app/static/css/main.86350839.css.map",
+    "main.3e4b6247.js.map": "/rick-and-morty-app/static/js/main.3e4b6247.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.86350839.css",
+    "static/js/main.3e4b6247.js"
+  ]
+}
