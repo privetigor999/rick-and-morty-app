@@ -109,3 +109,133 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .container {
+    .mainBlock {
+      width: 700px;
+      .closeBtn {
+        width: 30px;
+        height: 30px;
+      }
+      .headerInfoBlock {
+        width: 600px;
+        .name {
+          font-size: 26px;
+        }
+
+        .typeAndDimension {
+          font-size: 14px;
+          span {
+            margin-left: 8px;
+            font-size: 20px;
+          }
+        }
+      }
+      .residentsBlock {
+        width: 600px;
+        .residentsItems {
+          width: 600px;
+          font-size: 14px;
+          .residentItem {
+            padding: 4px 10px;
+            p {
+              font-size: 14px;
+            }
+            .residentImg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    .mainBlock {
+      width: 500px;
+      .closeBtn {
+        width: 25px;
+        height: 25px;
+      }
+      .headerInfoBlock {
+        width: 500px;
+        .name {
+          font-size: 26px;
+        }
+
+        .typeAndDimension {
+          font-size: 14px;
+          span {
+            margin-left: 8px;
+            font-size: 20px;
+          }
+        }
+      }
+      .residentsBlock {
+        width: 460px;
+        .residentsItems {
+          width: 460px;
+          font-size: 10px;
+          .residentItem {
+            padding: 4px 10px;
+            p {
+              font-size: 10px;
+            }
+            .residentImg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    .mainBlock {
+      width: 380px;
+      .closeBtn {
+        width: 25px;
+        height: 25px;
+      }
+      .headerInfoBlock {
+        width: 500px;
+        .name {
+          font-size: 26px;
+        }
+
+        .typeAndDimension {
+          font-size: 14px;
+          span {
+            margin-left: 8px;
+            font-size: 20px;
+          }
+        }
+      }
+      .residentsBlock {
+        width: 350px;
+        .residentsItems {
+          width: 350px;
+          font-size: 10px;
+          .residentItem {
+            padding: 4px 10px;
+            line-height: 10px;
+            p {
+              font-size: 10px;
+            }
+            .residentImg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

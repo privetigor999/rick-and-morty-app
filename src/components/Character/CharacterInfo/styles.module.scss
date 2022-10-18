@@ -130,3 +130,112 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .container {
+    .mainBlock {
+      width: 700px;
+      .closeBtn {
+        width: 30px;
+      }
+      .headerInfoBlock {
+        width: 600px;
+        height: 200px;
+        .headerInfoBlockImg {
+          width: 200px;
+          height: 200px;
+        }
+      }
+      .episodesBlock {
+        width: 600px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    .mainBlock {
+      width: 520px;
+      .closeBtn {
+        width: 30px;
+      }
+      .headerInfoBlock {
+        width: 500px;
+        height: 180px;
+        .headerInfoBlockImg {
+          width: 180px;
+          height: 180px;
+        }
+      }
+      .episodesBlock {
+        width: 480px;
+        .episodeParag {
+          .episodeItem {
+            margin: 2px 5px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    .mainBlock {
+      width: 380px;
+      .closeBtn {
+        width: 20px;
+      }
+      .headerInfoBlock {
+        width: 380px;
+        height: 100px;
+        .headerInfoBlockImg {
+          width: 100px;
+          height: 100px;
+        }
+        .headerInfoBlockRight {
+          .name {
+            font-size: 20px;
+          }
+          .gender {
+            font-size: 10px;
+            span {
+              font-size: 12px;
+            }
+          }
+          .locationAndOrigin {
+            font-size: 10px;
+            .locationAndOriginValue {
+              font-size: 12px;
+            }
+          }
+          .aliveStatusBlock {
+            .statusAliveImg {
+              width: 10px;
+              height: 10px;
+              margin-right: 2px;
+            }
+            p {
+              font-size: 10px;
+              span {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+      .episodesBlock {
+        width: 360px;
+        .episodeParag {
+          font-size: 12px;
+          .episodeItem {
+            font-size: 12px;
+            margin: 2px 5px;
+            padding: 2px 4px;
+          }
+        }
+      }
+    }
+  }
+}

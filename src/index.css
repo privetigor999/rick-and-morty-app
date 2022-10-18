@@ -106,3 +106,21 @@ a:active {
   background-color: rgb(35, 32, 41);
   min-height: 100vh;
 }
+
+@media screen and (max-width: 900px) {
+  .App {
+    min-width: 700px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .App {
+    min-width: 576px;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .App {
+    min-width: 320px;
+  }
+}

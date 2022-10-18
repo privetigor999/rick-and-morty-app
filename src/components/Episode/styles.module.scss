@@ -62,3 +62,24 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    font-size: 14px;
+    .loading {
+      width: 500px;
+      height: 150px;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    margin-top: 50px;
+    font-size: 14px;
+    .loading {
+      width: 380px;
+      height: 140px;
+    }
+  }
+}

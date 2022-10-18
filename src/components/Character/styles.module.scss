@@ -85,3 +85,100 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    .loading {
+      width: 500px;
+      height: 150px;
+      font-size: 30px;
+    }
+    .countBlock {
+      font-size: 14px;
+    }
+    .charactersBlock {
+      .characterItem {
+        width: 500px;
+        height: 150px;
+        margin: 0 0 10px 0;
+        .characterImg {
+          width: 150px;
+          height: 150px;
+        }
+        .characterInfoBlock {
+          width: 350px;
+          .heroNameAndStatusBlock {
+            .heroName {
+              font-size: 16px;
+            }
+            .heroStatusBlock {
+              font-size: 12px;
+            }
+          }
+          .lastLocationBlock {
+            .lastLocationParag {
+              font-size: 12px;
+            }
+            .lastLocationSpan {
+              font-size: 14px;
+            }
+            .unknownInfo {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    margin-top: 50px;
+    .loading {
+      width: 400px;
+      height: 150px;
+      font-size: 30px;
+    }
+    .countBlock {
+      font-size: 14px;
+    }
+    .charactersBlock {
+      .characterItem {
+        width: 400px;
+        height: 100px;
+        margin: 0 0 10px 0;
+        .characterImg {
+          width: 100px;
+          height: 100px;
+        }
+        .characterInfoBlock {
+          width: 300px;
+          .heroNameAndStatusBlock {
+            .heroName {
+              font-size: 16px;
+            }
+            .heroStatusBlock {
+              font-size: 10px;
+              .heroStatusImg {
+                width: 6px;
+                height: 6px;
+              }
+            }
+          }
+          .lastLocationBlock {
+            .lastLocationParag {
+              font-size: 10px;
+            }
+            .lastLocationSpan {
+              font-size: 12px;
+            }
+            .unknownInfo {
+              font-size: 12px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

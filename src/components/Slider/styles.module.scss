@@ -16,3 +16,39 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .container {
+    height: 220px;
+    .sliderBlock {
+      .sliderImg {
+        width: 700px;
+        height: 200px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    height: 180px;
+    .sliderBlock {
+      .sliderImg {
+        width: 520px;
+        height: 160px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    height: 140px;
+    .sliderBlock {
+      .sliderImg {
+        width: 300px;
+        height: 120px;
+      }
+    }
+  }
+}

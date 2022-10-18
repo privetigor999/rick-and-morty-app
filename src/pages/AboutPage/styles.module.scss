@@ -48,3 +48,50 @@
     }
   }
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    .aboutBlock {
+      width: 500px;
+      height: 200px;
+      .image {
+        width: 200px;
+        height: 200px;
+      }
+      .myInfoBlock {
+        width: 300px;
+        height: 200px;
+        .infoItem {
+          font-size: 12px;
+          .infoItemSpan {
+            font-size: 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    .aboutBlock {
+      width: 400px;
+      height: 150px;
+      .image {
+        width: 150px;
+        height: 150px;
+      }
+      .myInfoBlock {
+        width: 250px;
+        height: 150px;
+        padding: 16px 0 16px 30px;
+        .infoItem {
+          font-size: 10px;
+          .infoItemSpan {
+            font-size: 14px;
+          }
+        }
+      }
+    }
+  }
+}

@@ -90,3 +90,85 @@
     font-size: 22px;
   }
 }
+
+@media screen and (max-width: 767px) {
+  .container {
+    .characterItem {
+      width: 520px;
+      height: 160px;
+      margin: 0 0 16px 0;
+      .characterImg {
+        width: 160px;
+        height: 160px;
+      }
+      .characterInfoBlock {
+        margin-left: 6px;
+        .heroNameAndStatusBlock {
+          .heroName {
+            font-size: 20px;
+          }
+          .heroStatusBlock {
+            .heroStatusImg {
+              margin-right: 4px;
+            }
+          }
+        }
+      }
+      .lastLocationBlock {
+        .lastLocationParag {
+          font-size: 12px;
+        }
+        .lastLocationSpan {
+          font-size: 14px;
+        }
+        .unknownInfo {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    .loading {
+      width: 400px;
+      height: 150px;
+      font-size: 16px;
+    }
+    .characterItem {
+      width: 300px;
+      height: 100px;
+      .characterImg {
+        width: 100px;
+        height: 100px;
+      }
+      .characterInfoBlock {
+        padding: 0 8px;
+        .heroNameAndStatusBlock {
+          .heroName {
+            font-size: 14px;
+          }
+          .heroStatusBlock {
+            font-size: 12px;
+            .heroStatusImg {
+              width: 6px;
+              height: 6px;
+            }
+          }
+        }
+        .lastLocationBlock {
+          .lastLocationParag {
+            font-size: 8px;
+          }
+          .lastLocationSpan {
+            font-size: 10px;
+          }
+          .unknownInfo {
+            font-size: 10px;
+          }
+        }
+      }
+    }
+  }
+}

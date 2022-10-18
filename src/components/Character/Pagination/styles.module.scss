@@ -38,3 +38,12 @@
     transform: none;
   }
 }
+@media screen and (max-width: 575px) {
+  .container {
+    .buttomItem {
+      width: 30px;
+      height: 30px;
+      font-size: 18px;
+    }
+  }
+}

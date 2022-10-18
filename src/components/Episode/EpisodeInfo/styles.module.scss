@@ -106,3 +106,139 @@
     }
   }
 }
+
+@media screen and (max-width: 900px) {
+  .container {
+    .mainBlock {
+      width: 700px;
+      .closeBtn {
+        width: 30px;
+        height: 30px;
+      }
+      .headerInfoBlock {
+        width: 600px;
+        .name {
+          font-size: 26px;
+        }
+
+        .headerInfoEpisodeAndDate {
+          .infoItem {
+            font-size: 14px;
+            span {
+              margin-left: 8px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .charactersBlock {
+        width: 600px;
+        .characterItems {
+          width: 600px;
+          font-size: 14px;
+          .characterItem {
+            padding: 4px 10px;
+            p {
+              font-size: 14px;
+            }
+            .characterImg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .container {
+    .mainBlock {
+      width: 500px;
+      .closeBtn {
+        width: 25px;
+        height: 25px;
+      }
+      .headerInfoBlock {
+        width: 500px;
+        .name {
+          font-size: 26px;
+        }
+
+        .headerInfoEpisodeAndDate {
+          .infoItem {
+            font-size: 14px;
+            span {
+              margin-left: 8px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .charactersBlock {
+        width: 460px;
+        .characterItems {
+          width: 460px;
+          font-size: 10px;
+          .characterItem {
+            padding: 4px 10px;
+            p {
+              font-size: 10px;
+            }
+            .characterImg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .container {
+    .mainBlock {
+      width: 380px;
+      .closeBtn {
+        width: 25px;
+        height: 25px;
+      }
+      .headerInfoBlock {
+        width: 500px;
+        .name {
+          font-size: 26px;
+        }
+
+        .headerInfoEpisodeAndDate {
+          .infoItem {
+            font-size: 14px;
+            span {
+              margin-left: 8px;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+      .charactersBlock {
+        width: 350px;
+        .characterItems {
+          width: 350px;
+          font-size: 10px;
+          .characterItem {
+            padding: 4px 10px;
+            line-height: 10px;
+            p {
+              font-size: 10px;
+            }
+            .characterImg {
+              width: 30px;
+              height: 30px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
