@@ -6,8 +6,6 @@ import {
   getCharacterInfo,
   getLocationInfo,
   getEpisodeInfo,
-  setToggleShowCharacter,
-  setPickedHero,
 } from "../../features/dataSlice";
 import aliveCirclePng from "../../images/heroStatus/alive.png";
 import deadCirclePng from "../../images/heroStatus/dead.png";
@@ -17,6 +15,7 @@ import CharacterInfo from "../Character/CharacterInfo/CharacterInfo";
 import LocationInfo from "../Location/LocationInfo/LocationInfo";
 import EpisodeInfo from "../Episode/EpisodeInfo/EpisodeInfo";
 import ErrorPage from "../../pages/ErrorPage/ErrorPage";
+
 const MainPageCharacters = () => {
   const dispatch = useDispatch();
   const data = useSelector((state) => state.data.data);

@@ -102,6 +102,7 @@ a:active {
 .App {
   display: flex;
   flex-direction: column;
+
   min-width: 900px;
   background-color: rgb(35, 32, 41);
   min-height: 100vh;

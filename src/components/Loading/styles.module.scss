@@ -1,0 +1,48 @@
+.loadingContainer {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: rgba(35, 32, 41, 0.652);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  .loadingBlock {
+    width: 600px;
+    height: 300px;
+    background-color: rgb(60, 62, 68);
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p {
+      font-size: 40px;
+      color: #ffffff;
+      margin-right: 30px;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .loadingContainer {
+    .loadingBlock {
+      width: 400px;
+      height: 200px;
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .loadingContainer {
+    .loadingBlock {
+      width: 260px;
+      height: 200px;
+      p {
+        font-size: 30px;
+      }
+    }
+  }
+}

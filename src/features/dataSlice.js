@@ -156,6 +156,7 @@ export const getCharacterInfo = createAsyncThunk(
   "data/getCharacterInfo",
   async (params, { dispatch }) => {
     const id = params;
+    dispatch(showLoadingBlock(true));
     const data = await axios
       .get(`https://rickandmortyapi.com/api/character/${id}`)
       .then((resp) => resp.data);
@@ -181,7 +182,7 @@ export const getCharacterInfo = createAsyncThunk(
 
       data.originInfo = { id, name };
     }
-
+    dispatch(showLoadingBlock(false));
     dispatch(setPickedHero(data));
     dispatch(setToggleShowLocation(false));
     dispatch(setToggleShowCharacter(true));
@@ -192,6 +193,7 @@ export const getCharacterInfo = createAsyncThunk(
 export const getLocationInfo = createAsyncThunk(
   "data/getLocationInfo",
   async (params, { dispatch }) => {
+    dispatch(showLoadingBlock(true));
     const id = params;
     const data = await axios
       .get(`https://rickandmortyapi.com/api/location/${id}`)
@@ -204,6 +206,7 @@ export const getLocationInfo = createAsyncThunk(
         .then((resp) => resp.data);
       data.allResidents.push({ id, name, image });
     }
+    dispatch(showLoadingBlock(false));
     dispatch(setLocationInfo(data));
     dispatch(setToggleShowEpisode(false));
     dispatch(setToggleShowCharacter(false));
@@ -214,6 +217,7 @@ export const getLocationInfo = createAsyncThunk(
 export const getEpisodeInfo = createAsyncThunk(
   "data/getEpisodeInfo",
   async (param, { dispatch }) => {
+    dispatch(showLoadingBlock(true));
     const id = param;
     const data = await axios
       .get(`https://rickandmortyapi.com/api/episode/${id}`)
@@ -226,6 +230,7 @@ export const getEpisodeInfo = createAsyncThunk(
         .then((resp) => resp.data);
       data.allCharacters.push({ id, name, image });
     }
+    dispatch(showLoadingBlock(false));
     dispatch(setEpisodeInfo(data));
     dispatch(setToggleShowEpisode(true));
     dispatch(setToggleShowCharacter(false));
@@ -250,6 +255,7 @@ const initialState = {
   statusCharacter: "",
   statusLocation: "",
   statusEpisode: "",
+  loadingBlock: false,
   toggleShowCharacter: false,
   toggleShowLocation: false,
   toggleShowEpisode: false,
@@ -300,6 +306,9 @@ export const dataSlice = createSlice({
     },
     changeNumberPageEpisode: (state, action) => {
       state.numberPageEpisode = action.payload;
+    },
+    showLoadingBlock: (state, action) => {
+      state.loadingBlock = action.payload;
     },
   },
   extraReducers: {
@@ -368,5 +377,6 @@ export const {
   setToggleShowLocation,
   setToggleShowEpisode,
   setLocationInfo,
+  showLoadingBlock,
 } = dataSlice.actions;
 export default dataSlice.reducer;
